@@ -22,8 +22,7 @@ body {
   transition: all .4s .3s ease-in; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -380,14 +379,101 @@ td,
 th {
   padding: 0; }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+.header {
+  background: #ffffff;
+  font-family: 'PT Sans'; }
+  .header .logo {
+    float: left;
+    max-width: 60px; }
+  .header .search-form {
+    position: absolute;
+    width: 100%;
+    background-color: #59646f; }
+    .header .search-form form {
+      padding: 44px; }
 
-.nav ul {
-  list-style: none; }
+.menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .menu ul li {
+      display: inline-block; }
+      .menu ul li a {
+        padding: 27px;
+        line-height: 4em;
+        color: #59646f;
+        font-size: 25px; }
+
+.sidebar {
+  font-family: 'PT Sans'; }
+
+.main {
+  font-family: 'PT Sans'; }
+  .main .development .development-description {
+    padding: 6em; }
+    .main .development .development-description p {
+      font-size: 20px; }
+  .main .videogames .gamer-description {
+    background: #353836;
+    padding: 6em;
+    color: #ffffff; }
+    .main .videogames .gamer-description p {
+      font-size: 20px; }
+  .main .videogames .gammer-image {
+    background: #000000;
+    font-size: 20px; }
+    .main .videogames .gammer-image figure {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0; }
+    .main .videogames .gammer-image img {
+      margin: 0 auto; }
+    .main .videogames .gammer-image h2 {
+      color: #962532;
+      font-weight: bold;
+      font-size: 74px; }
+    .main .videogames .gammer-image p {
+      padding: 0px 240px 9px 0px;
+      color: #ffffff; }
+  .main .aplication {
+    padding-bottom: 44px; }
+    .main .aplication .aplication-item {
+      position: relative;
+      cursor: pointer; }
+      .main .aplication .aplication-item .aplication-item-absolute {
+        background: #eeeff4;
+        position: absolute;
+        display: none;
+        padding: 0 24px;
+        font-size: 16px; }
+        .main .aplication .aplication-item .aplication-item-absolute figure {
+          margin: 0; }
+      .main .aplication .aplication-item:hover .aplication-item-absolute {
+        top: 0;
+        display: block;
+        height: 100%; }
+
+.row-equal-height {
+  display: -ms-flexbox;
+  display: flex; }
+
+.display-none {
+  display: none; }
+
+.display-block {
+  display: block; }
+
+.footer {
+  font-family: 'PT Sans';
+  background: #EEEFF4;
+  padding: 44px;
+  font-size: 20px; }
 
 @font-face {
   font-family: 'Font-Name';
@@ -415,6 +501,13 @@ th {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+/* ------------------------------Ipad Horizontal---------------------------- */
+/* ------------------------------Ipad Vertical---------------------------- */
+/* ---------------------------- 320px-640px -------------------------- */
+@media handheld, only screen and (max-width: 640px) {
+  .row-equal-height {
+    display: block; } }
 
 @media print {
   * {

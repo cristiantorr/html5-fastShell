@@ -3,7 +3,10 @@
   'use strict';
 
   $(function () {
-    // FastShell
+    $('#icon-search').on('click', function(){
+    	$('#glyphicon-remove').toggle();
+    	$('#search-form').toggle();
+    });
   });
 
 })(jQuery, window, document);

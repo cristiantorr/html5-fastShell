@@ -1,3 +1,92 @@
 .main {
+	font-family: 'PT Sans';
 
+	.development{
+    	.dev-item{
+    		
+    	}
+		.development-description{
+			padding: 6em;
+			p{
+				font-size: 20px;
+			}
+		}
+	}
+	.videogames{
+		.gamer-description{
+				background: rgb(53, 56, 54);
+				padding: 6em;
+				color: #ffffff;
+			p{
+				font-size: 20px;
+			}
+		}
+		.gammer-image{
+			background: #000000;
+			font-size:20px;	
+			figure{
+				position: absolute;
+			    right: 0;
+			    bottom: 0;
+			    margin: 0;
+			}
+			img{
+				margin: 0 auto;
+			}
+			h2{
+				color: #962532;
+			    font-weight: bold;
+			    font-size: 74px;
+			}
+			p{
+				padding: 0px 240px 9px 0px;
+				color: #ffffff;
+			}
+		}
+	}
+
+	.aplication{
+		padding-bottom: 44px;
+		.aplication-item{
+			position: relative;
+			cursor: pointer;
+		    .aplication-item-absolute{
+		    	background: rgb(238, 239, 244);
+		    	position: absolute;
+				display: none;
+				padding: 0 24px;
+    			font-size: 16px;
+		    	figure{
+		    		margin: 0;
+		    	}
+		    	
+		    }
+		    &:hover{
+		    	 .aplication-item-absolute{
+		    	 	top: 0;
+		    	 	display: block;
+		    	 	height: 100%;
+
+		    	}	
+		    }
+		}
+		h2{
+
+		}
+	}
 }
+
+.row-equal-height{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.display-none{display: none;}
+.display-block{display: block;}
+
+
+
+ 
+
