@@ -10,7 +10,23 @@
 	<meta property="og:type"               content="website" />
 	<meta property="og:title"              content="Web Developer html y css" />
 	<meta property="og:description"        content="Fastshell Maquetación" />
-	<meta property="og:image"              content="https://cristiantorr.github.io/html5-fastShell/app/assets/img/icon/HTML5.png" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	/* IMAGEN RANDOM PARA CADA USUARIO*/
+
+    	$(document).ready(function(){
+    		 var random_images = ['https://cristiantorr.github.io/html5-fastShell/app/assets/img/icon/HTML5.png', 'https://cristiantorr.github.io/html5-fastShell/app/assets/img/developertv.png', 'https://cristiantorr.github.io/html5-fastShell/app/assets/img/thelastpng.png'];
+		        var total_imagesd = random_images.length;
+		        var imagen_randome = Math.round(Math.random()*(total_imagesd-1));
+		        var image = random_images[imagen_randome];
+		        $("meta[name='ogimage']").attr('content', image);
+		        console.log(image);
+		    });
+
+     /*END IMAGEN RANDOM*/
+    </script>
+	<meta property="og:image"   name="ogimage" content="" />
 	<!-- Google Fonts-->
 	<link href='https://fonts.googleapis.com/css?family=PT Sans' rel='stylesheet'>
 
